@@ -7,8 +7,9 @@ from datetime import datetime
 
 def get_webpage_content():
     # 从输入框获取网址
+    
     url = url_entry.get()
-    print(url)
+    #print(url)
 
     try:
         # 发送 HTTP 请求获取网页内容
@@ -69,7 +70,7 @@ def get_webpage_content():
 
 # 创建主窗口
 window = tk.Tk()
-window.title("网页内容获取器")
+window.title("获取点击")
 
 # 创建网址输入框
 url_entry = tk.Entry(window, width=50)
@@ -80,7 +81,7 @@ button = tk.Button(window, text="获取", command=get_webpage_content)
 button.pack()
 
 # 创建结果标签
-result_label = tk.Label(window, text="差值: ")
+result_label = tk.Label(window, text="点击新增: ")
 result_label.pack()
 
 # 运行窗口
